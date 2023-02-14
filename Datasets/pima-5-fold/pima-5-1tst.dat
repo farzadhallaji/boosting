@@ -7,7 +7,7 @@
 @attribute Mass real [0.0, 67.1]
 @attribute Pedi real [0.078, 2.42]
 @attribute Age real [21.0, 81.0]
-@attribute Class {positive,negative}
+@attribute Class {positive, negative}
 @inputs Preg, Plas, Pres, Skin, Insu, Mass, Pedi, Age
 @outputs Class
 @data

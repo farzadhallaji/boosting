@@ -17,7 +17,7 @@
 @attribute Minor_kurtosis integer [0, 41]
 @attribute Major_kurtosis integer [176, 206]
 @attribute Hollows_ratio integer [181, 211]
-@attribute Class {positive,negative}
+@attribute Class {positive, negative}
 @inputs Compactness, Circularity, Distance_circularity, Radius_ratio, Praxis_aspect_ratio, Max_length_aspect_ratio, Scatter_ratio, Elongatedness, Praxis_rectangular, Length_rectangular, Major_variance, Minor_variance, Gyration_radius, Major_skewness, Minor_skewness, Minor_kurtosis, Major_kurtosis, Hollows_ratio
 @outputs Class
 @data
