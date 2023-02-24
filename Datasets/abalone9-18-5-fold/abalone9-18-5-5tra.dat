@@ -1,4 +1,9 @@
-Sex, Length, Diameter, Height, Whole_weight, Shucked_weight, Viscera_weight, Shell_weight, class
+@relation 
+@attribute 
+@attribute Class {1, -1}
+@inputs Sex, Length, Diameter, Height, Whole_weight, Shucked_weight, Viscera_weight, Shell_weight
+@outputs Class
+@data
 M, 0.475, 0.37, 0.125, 0.5095, 0.2165, 0.1125, 0.165, -1
 M, 0.45, 0.32, 0.1, 0.381, 0.1705, 0.075, 0.115, -1
 F, 0.55, 0.415, 0.135, 0.7635, 0.318, 0.21, 0.2, -1

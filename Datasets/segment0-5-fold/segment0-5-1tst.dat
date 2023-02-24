@@ -1,4 +1,27 @@
-Region-centroid-col, Region-centroid-row, Region-pixel-count, Short-line-density-5, Short-line-density-2, Vedge-mean, Vegde-sd, Hedge-mean, Hedge-sd, Intensity-mean, Rawred-mean, Rawblue-mean, Rawgreen-mean, Exred-mean, Exblue-mean, Exgreen-mean, Value-mean, Saturatoin-mean, Hue-mean, class
+@relation segment0
+@attribute Region-centroid-col real [1.0, 254.0]
+@attribute Region-centroid-row real [11.0, 251.0]
+@attribute Region-pixel-count real [9.0, 10.0]
+@attribute Short-line-density-5 real [0.0, 0.33333334]
+@attribute Short-line-density-2 real [0.0, 0.22222222]
+@attribute Vedge-mean real [0.0, 29.222221]
+@attribute Vegde-sd real [0.0, 991.7184]
+@attribute Hedge-mean real [0.0, 44.722225]
+@attribute Hedge-sd real [-1.5894573E-8, 1386.3292]
+@attribute Intensity-mean real [0.0, 143.44444]
+@attribute Rawred-mean real [0.0, 137.11111]
+@attribute Rawblue-mean real [0.0, 150.88889]
+@attribute Rawgreen-mean real [0.0, 142.55556]
+@attribute Exred-mean real [-49.666668, 9.888889]
+@attribute Exblue-mean real [-12.444445, 82.0]
+@attribute Exgreen-mean real [-33.88889, 24.666666]
+@attribute Value-mean real [0.0, 150.88889]
+@attribute Saturatoin-mean real [0.0, 1.0]
+@attribute Hue-mean real [-3.0441751, 2.9124804]
+@attribute Class {positive,negative}
+@inputs Region-centroid-col, Region-centroid-row, Region-pixel-count, Short-line-density-5, Short-line-density-2, Vedge-mean, Vegde-sd, Hedge-mean, Hedge-sd, Intensity-mean, Rawred-mean, Rawblue-mean, Rawgreen-mean, Exred-mean, Exblue-mean, Exgreen-mean, Value-mean, Saturatoin-mean, Hue-mean
+@outputs Class
+@data
 149.0, 185.0, 9.0, 0.0, 0.0, 1.5555553, 1.0680546, 3.0555553, 1.9254627, 49.333332, 45.333332, 59.555557, 43.11111, -12.0, 30.666666, -18.666666, 59.555557, 0.2758892, -1.9527698, negative
 86.0, 197.0, 9.0, 0.11111111, 0.11111111, 1.611112, 1.4516907, 1.2777786, 1.1038647, 63.22222, 56.22222, 77.77778, 55.666668, -21.0, 43.666668, -22.666666, 77.77778, 0.28533262, -2.06802, negative
 83.0, 28.0, 9.0, 0.0, 0.0, 0.3888893, 0.13608134, 0.88888675, 0.45542085, 112.96296, 99.44444, 131.11111, 108.333336, -40.555557, 54.444443, -13.888889, 131.11111, 0.24151142, -2.3878844, negative
