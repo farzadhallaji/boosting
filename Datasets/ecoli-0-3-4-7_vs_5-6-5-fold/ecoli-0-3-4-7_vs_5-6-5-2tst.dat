@@ -1,4 +1,9 @@
-a1, a2, a3, a4, a5, a6, a7 , class
+@relation ecoli
+@attribute
+@attribute Class {1, -1}   
+@inputs a1, a2, a3, a4, a5, a6, a7
+@outputs Class
+@data
 49.0, 29.0, 48.0, 5.0, 56.0, 24.0, 35.0, -1
 51.0, 5.0, 48.0, 5.0, 46.0, 32.0, 35.0, -1
 22.0, 43.0, 48.0, 5.0, 48.0, 16.0, 28.0, -1
