@@ -1,7 +1,7 @@
 @relation 
 @attribute 
 @attribute Class {1, -1}
-@inputs Mcg , Gvh, Alm, Mit, Erl, Vac, Nuc
+@inputs Mcg, Gvh, Alm, Mit, Erl, Vac, Nuc
 @outputs Class
 @data
 0.58, 0.47, 0.54, 0.11, 0.5, 0.51, 0.26, -1
