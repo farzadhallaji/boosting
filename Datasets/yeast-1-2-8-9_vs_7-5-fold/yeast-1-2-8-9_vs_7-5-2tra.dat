@@ -1,9 +1,4 @@
-@relation yeast
-@attribute
-@attribute Class {1, -1}   
-@inputs Mcg, Gvh, Alm, Mit, Erl, Pox, Vac, Nuc
-@outputs Class
-@data
+Mcg, Gvh, Alm, Mit, Erl, Pox, Vac, Nuc, class
 0.58, 0.44, 0.57, 0.13, 0.5, 0.0, 0.54, 0.22, -1
 0.48, 0.45, 0.59, 0.2, 0.5, 0.0, 0.58, 0.34, -1
 0.43, 0.39, 0.54, 0.21, 0.5, 0.0, 0.53, 0.27, -1
