@@ -87,7 +87,7 @@ class mSMOTENC():
                 O = len(X.loc[is_target & row_level_filter, :])
                 E = rows_in_level * imb_ratio
                 # Encoded value = chi, i.e. (observed - expected)/expected
-                ENC = (O - E) / E
+                ENC = (O - E) / (E+0.0000000000001)
                 OE_dict[level] = ENC
                 
             encoded_dict_list.append(OE_dict)
@@ -106,7 +106,7 @@ class mSMOTENC():
 
     def fit_resample(self, X, y):
 
-        X_cat_encoded, encoded_dict_list, nan_dict = self.cat_corr_pandas(X.iloc[:,np.asarray(self.categorical_features)],  y, target_column='fake_cat1', target_value=1)
+        X_cat_encoded, encoded_dict_list, nan_dict = self.cat_corr_pandas(X.iloc[:,np.asarray(self.categorical_features)],  y, target_column='fake_cat1', target_value=0)
 
         X_cat_encoded = np.array(X_cat_encoded)
         y = np.ravel(y)
