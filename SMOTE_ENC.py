@@ -2,6 +2,10 @@
 from scipy import stats
 import numpy as np
 import pandas as pd
+from collections import Counter
+from sklearn.utils import check_array, _safe_indexing, sparsefuncs_fast, check_X_y, check_random_state
+
+from scipy import sparse
 
 
 
@@ -89,7 +93,9 @@ class mSMOTENC():
             encoded_dict_list.append(OE_dict)
 
             X.loc[:, column] = X[column].map(OE_dict)
+            print('X.loc[:, column]', X.loc[:, column])
             nan_idx_array = np.ravel(np.argwhere(np.isnan(X.loc[:, column])))
+            
             if len(nan_idx_array) > 0 :
                 nan_dict[c] = nan_idx_array
             c = c + 1
@@ -99,8 +105,8 @@ class mSMOTENC():
         return X, encoded_dict_list, nan_dict
 
     def fit_resample(self, X, y):
-        print(X.iloc[:,np.asarray(self.categorical_features)])
-        X_cat_encoded, encoded_dict_list, nan_dict = self.cat_corr_pandas(X.iloc[:,np.asarray(self.categorical_features)], y, target_column='Cover_Type', target_value=1)
+
+        X_cat_encoded, encoded_dict_list, nan_dict = self.cat_corr_pandas(X.iloc[:,np.asarray(self.categorical_features)],  y, target_column='fake_cat1', target_value=1)
 
         X_cat_encoded = np.array(X_cat_encoded)
         y = np.ravel(y)
