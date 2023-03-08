@@ -1,4 +1,4 @@
-@relatio@relation glass
+@relation glass
 @attribute RI real [0.0, 0.89]
 @attribute Na real [0.16, 1.0]
 @attribute Mg real [0.48, 1.0]

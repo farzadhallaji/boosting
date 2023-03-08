@@ -8,7 +8,7 @@
 @attribute BlandChromatin integer [1, 10]
 @attribute NormalNucleoli integer [1, 10]
 @attribute Mitoses integer [1, 10]
-@attribute Class {1,-1}
+@attribute Class {1, -1}
 @inputs ClumpThickness, CellSize, CellShape, MarginalAdhesion, EpithelialSize, BareNuclei, BlandChromatin, NormalNucleoli, Mitoses
 @outputs Class
 @data

@@ -6,9 +6,9 @@
 @attribute Led5 real [0.0, 1.0]
 @attribute Led6 real [0.0, 1.0]
 @attribute Led7 real [0.0, 1.0]
-@attribute number {1, -1}
+@attribute Class {1, -1}
 @inputs Led1, Led2, Led3, Led4, Led5, Led6, Led7
-@outputs number
+@outputs Class
 @data
 1.0, 1.0, 1.0, 0.0, 0.0, 1.0, 1.0, -1
 1.0, 1.0, 1.0, 0.0, 1.0, 1.0, 1.0, -1
