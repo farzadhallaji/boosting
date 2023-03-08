@@ -1,5 +1,11 @@
-@relation 
-@attribute 
+@relation yeast
+@attribute Mcg real [-5.211, -0.941]
+@attribute Gvh real [-1.274, 5.074]
+@attribute Alm real [-2.487, 1.431]
+@attribute Mit real [-1.409, 2.377]
+@attribute Erl real [-2.127, 1.831]
+@attribute Vac real [-0.836, 2.327]
+@attribute Nuc real [-1.537, 1.403]
 @attribute Class {1, -1}
 @inputs Mcg, Gvh, Alm, Mit, Erl, Vac, Nuc
 @outputs Class

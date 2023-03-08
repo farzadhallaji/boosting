@@ -1,4 +1,17 @@
-A1, A2, A3, A4, A5, A6, A7, A8, A9, class
+@relation shuttle
+@attribute A1 integer [65, 144]
+@attribute A2 integer [65, 144]
+@attribute A3 integer [65, 144]
+@attribute A4 integer [65, 144]
+@attribute A5 integer [65, 144]
+@attribute A6 integer [65, 144]
+@attribute A7 integer [65, 144]
+@attribute A8 integer [65, 144]
+@attribute A9 integer [65, 144]
+@attribute Class {1, -1}
+@inputs A1, A2, A3, A4, A5, A6, A7, A8, A9
+@outputs Class
+@data
 62, 0, 109, 0, 62, 23, 48, 47, 0, -1
 49, -4, 107, -1, 50, 0, 58, 58, 0, -1
 37, 0, 78, -4, 28, 0, 41, 50, 8, -1

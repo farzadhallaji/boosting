@@ -1,4 +1,17 @@
-RI, Na, Mg, Al, Si, K, Ca, Ba, Fe, class
+@relation glass
+@attribute RI real [0.0, 0.89]
+@attribute Na real [0.16, 1.0]
+@attribute Mg real [0.48, 1.0]
+@attribute Al real [0.0, 0.88]
+@attribute Si real [0.03, 1.0]
+@attribute K real [0.0, 0.99]
+@attribute Ca real [0.0, 0.99]
+@attribute Ba real [0.0, 0.99]
+@attribute Fe real [0.0, 0.99]
+@attribute Class {1, -1}   
+@inputs RI, Na, Mg, Al, Si, K, Ca, Ba, Fe
+@outputs Class
+@data
 1.52212996, 14.20795, 3.82099, 0.46976, 71.77, 0.11178, 9.5726, 0.0, 0.0, -1
 1.52222108, 13.21045, 3.7716, 0.79076, 71.9884, 0.13041, 10.2452, 0.0, 0.0, -1
 1.51755118, 13.39, 3.65935, 1.1888, 72.7892, 0.57132, 8.27064, 0.0, 0.0561, -1

@@ -1,5 +1,13 @@
-@relation glass
-@attribute
+@relatio@relation glass
+@attribute RI real [0.0, 0.89]
+@attribute Na real [0.16, 1.0]
+@attribute Mg real [0.48, 1.0]
+@attribute Al real [0.0, 0.88]
+@attribute Si real [0.03, 1.0]
+@attribute K real [0.0, 0.99]
+@attribute Ca real [0.0, 0.99]
+@attribute Ba real [0.0, 0.99]
+@attribute Fe real [0.0, 0.99]
 @attribute Class {1, -1}   
 @inputs RI, Na, Mg, Al, Si, K, Ca, Ba, Fe
 @outputs Class

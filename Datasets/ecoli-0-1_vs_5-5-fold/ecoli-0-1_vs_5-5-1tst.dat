@@ -1,5 +1,10 @@
 @relation ecoli
-@attribute
+@attribute a1 real [0.0, 0.89]
+@attribute a2 real [0.16, 1.0]
+@attribute a3 real [0.48, 1.0]
+@attribute a5 real [0.0, 0.88]
+@attribute a6 real [0.03, 1.0]
+@attribute a7 real [0.0, 0.99]
 @attribute Class {1, -1}   
 @inputs a1, a2, a3, a5, a6, a7
 @outputs Class

@@ -1,4 +1,16 @@
-mcg, gvh, alm, mit, erl, pox, vac, nuc , class
+@relation yeast
+@attribute mcg real [-5.211, -0.941]
+@attribute gvh real [-1.274, 5.074]
+@attribute alm real [-2.487, 1.431]
+@attribute mit real [-1.409, 2.377]
+@attribute erl real [-2.127, 1.831]
+@attribute pox real [-0.836, 2.327]
+@attribute vac real [-1.537, 1.403]
+@attribute nuc real [-1.293, 2.039]
+@attribute Class {1, -1}
+@inputs mcg, gvh, alm, mit, erl, pox, vac, nuc
+@outputs Class
+@data
 0.58, 0.61, 0.47, 0.13, 0.5, 0.0, 0.48, 0.22, -1
 0.43, 0.67, 0.48, 0.27, 0.5, 0.0, 0.53, 0.22, -1
 0.5, 0.54, 0.48, 0.65, 0.5, 0.0, 0.53, 0.22, -1
