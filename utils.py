@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-
+import os
 import re
 
 from sklearn.preprocessing import LabelEncoder
@@ -42,12 +42,14 @@ def read_dot_dat_file(path):
 
 
 
-def res_to_files(dataset, classifier, dict_res):
-    np.save('./Results/'+dataset+'/'+classifier+'/mcc.npy',dict_res['mcc'])
-    np.save('./Results/'+dataset+'/'+classifier+'/auc.npy',dict_res['auc'])
-    np.save('./Results/'+dataset+'/'+classifier+'/f1.npy',dict_res['f1'])
-    np.save('./Results/'+dataset+'/'+classifier+'/gmean.npy',dict_res['gmean'])
-    np.save('./Results/'+dataset+'/'+classifier+'/exe_time.npy',dict_res['exe_time'])
-    np.save('./Results/'+dataset+'/'+classifier+'/y_pred.npy',dict_res['y_pred'])
+def res_to_files(folder, dataset, classifier, dict_res):
+    if not os.path.exists('./Results/'+folder+'/'+dataset+'/'+classifier):
+        os.makedirs('./Results/'+folder+'/'+dataset+'/'+classifier)
+    np.save('./Results/'+folder+'/'+dataset+'/'+classifier+'/mcc.npy',dict_res['mcc'])
+    np.save('./Results/'+folder+'/'+dataset+'/'+classifier+'/auc.npy',dict_res['auc'])
+    np.save('./Results/'+folder+'/'+dataset+'/'+classifier+'/f1.npy',dict_res['f1'])
+    np.save('./Results/'+folder+'/'+dataset+'/'+classifier+'/gmean.npy',dict_res['gmean'])
+    np.save('./Results/'+folder+'/'+dataset+'/'+classifier+'/exe_time.npy',dict_res['exe_time'])
+    np.save('./Results/'+folder+'/'+dataset+'/'+classifier+'/y_pred.npy',dict_res['y_pred'])
     
     
