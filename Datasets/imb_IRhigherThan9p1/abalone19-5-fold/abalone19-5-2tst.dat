@@ -1,5 +1,5 @@
 @relation abalone19
-@attribute Sex {M, F, I}
+@attribute Sex nominal {M, F, I}
 @attribute Length real [0.075, 0.815]
 @attribute Diameter real [0.055, 0.65]
 @attribute Height real [0.0, 1.13]

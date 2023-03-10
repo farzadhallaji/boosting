@@ -12,9 +12,9 @@
 @attribute slope real [1.0, 3.0]
 @attribute ca real [0.0, 3.0]
 @attribute thal real [3.0, 7.0]
-@attribute num {positive, negative}
+@attribute Class {positive, negative}
 @inputs age, sex, cp, trestbps, chol, fbs, restecg, thalach, exang, oldpeak, slope, ca, thal
-@outputs num
+@outputs Class
 @data
 54.0,1.0,4.0,140.0,239.0,0.0,0.0,160.0,0.0,1.2,1.0,0.0,3.0,negative
 44.0,1.0,3.0,130.0,233.0,0.0,0.0,179.0,1.0,0.4,1.0,0.0,3.0,negative
